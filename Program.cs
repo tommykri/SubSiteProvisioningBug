@@ -18,7 +18,7 @@ namespace ApplyTemplateToSubSiteBug
 
                 using (var context = new ClientContext(subSiteUrl))
                 {  
-                    // Applying a empty template to a subsite gives exception: startIndex cannot be larger than length of string.\r\nParameter name: startIndex 
+                    // Applying a empty template to a subsite gives exception: startIndex cannot be larger than length of string.\r\nParameter name: startIndex  
                     var template = new ProvisioningTemplate();
                     context.Web.ApplyProvisioningTemplate(template);
                 }
